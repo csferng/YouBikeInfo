@@ -1,10 +1,10 @@
 {
 	"name": "Favorite YouBike Sites",
-	"version": "0.1.12",
+	"version": "0.1.13",
 	"manifest_version": 2,
 	"description": "Real-time information of YouBike stations in Taipei.",
 	"app": {
 		"launch": { "local_path": "main.html" }
 	},
-	"permissions": [ "http://www.youbike.com.tw/" ]
+	"permissions": [ "storage", "http://www.youbike.com.tw/" ]
 }
