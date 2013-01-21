@@ -1,0 +1,57 @@
+body {
+	min-width: 470px;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+table {
+	border-collapse: collapse;
+	border-color: black;
+	cellpadding: 1px;
+}
+th {
+	text-align: center;
+}
+th, td {
+	padding: 2px; 
+}
+ul {
+	list-style-type: none;
+}
+li {
+	padding: 3px 0px;
+}
+div.item {
+	width: 470px;
+	height: 2.2em;
+	position: relative;
+	overflow: hidden;
+}
+div.name {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+div.addr {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	color: #888888;
+	font-size: small;
+}
+div.val {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+div.time {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	color: #888888;
+	font-size: small;
+}
+.err {
+	width: 100%;
+	background-color: #880000;
+	color: #ffffff;
+}

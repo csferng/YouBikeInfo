@@ -1,3 +1,3 @@
 YouBikeInfo
 ===========
-Real-time information of YouBike stations in Taipei.
+Chrome packaged app: Real-time information of YouBike stations in Taipei.
