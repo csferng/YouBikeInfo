@@ -22,24 +22,13 @@ function showMark(xml) {
 			if(ms.eq(i).attr('name') == mark) {
 				var x = ms.eq(i);
 				showStation(x.attr('name'), x.attr('address'), x.attr('tot'), x.attr('sus'), x.attr('mday'));
-//				var tr = $('<tr></tr>').appendTo(tbody);
-//				tr.append('<td>'+x.attr('name')+'</td>');
-//				tr.append('<td>'+x.attr('address')+'</td>');
-//				tr.append('<td>'+x.attr('tot')+'</td>');
-//				tr.append('<td>'+x.attr('sus')+'</td>');
-//				tr.append('<td>'+x.attr('mday')+'</td>');
 				break;
 			}
 		}
 	});
 }
-function load() {
+function loadXml() {
 	showHeader();
-//	var tbl = $('<table></table>').appendTo($('body'));
-//	var thead = $('<thead></thead>').appendTo(tbl);
-//	var tr1 = $('<tr></tr>').appendTo(thead);
-//	tr1.append('<th>站名</th><th>位置</th><th>有車</th><th>空位</th><th>更新時間</th>');
-//	var tbody = $('<tbody></tbody>').appendTo(tbl);
 	$.ajax({
 		url: SRC, dataType: 'text',
 		error: showErr,
@@ -48,5 +37,6 @@ function load() {
 		},
 	});
 }
-$(load);
-
+$(function(){
+	loadXml();
+});
