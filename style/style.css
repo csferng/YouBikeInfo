@@ -16,12 +16,13 @@ th, td {
 }
 ul {
 	list-style-type: none;
+	float: left;
 }
 li {
 	padding: 3px 0px;
 }
 div.item {
-	width: 470px;
+	width: 450px;
 	height: 2.2em;
 	position: relative;
 	overflow: hidden;
