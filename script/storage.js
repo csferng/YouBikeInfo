@@ -5,16 +5,19 @@ function storageInit() {
 		if(size != 0) {
 			chrome.storage.local.get('starred', function(item){
 				STAR = item['starred'];
+				prepare(STAR, null);
 			});
 		} else {
 			chrome.storage.local.set({'starred':INIT_MARK});
 			STAR = INIT_MARK;
+			prepare(STAR, null);
 		}
 	});
 }
 function storageAdd(mark) {
 	STAR.push(mark);
 	chrome.storage.local.set({'starred':STAR});
+	return STAR;
 }
 function storageDel(mark) {
 	var t = 0;
@@ -24,4 +27,5 @@ function storageDel(mark) {
 	}
 	for(; t > 0; --t) STAR.pop();
 	chrome.storage.local.set({'starred':STAR});
+	return STAR;
 }

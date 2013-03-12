@@ -19,25 +19,28 @@ ul {
 	float: left;
 }
 li {
-	padding: 3px 0px;
+	padding: 2px 0px;
 }
 div.item {
-	width: 450px;
+	width: 460px;
 	height: 2.2em;
 	position: relative;
 	overflow: hidden;
+	border-style: solid;
+	border-width: 0px;
+	padding: 1px;
 }
 div.name {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 20px;
 }
 div.addr {
 	position: absolute;
 	bottom: 0px;
-	left: 0px;
+	left: 20px;
 	color: #888888;
-	font-size: small;
+	font-size: 80%;
 }
 div.val {
 	position: absolute;
@@ -49,10 +52,31 @@ div.time {
 	bottom: 0px;
 	right: 0px;
 	color: #888888;
-	font-size: small;
+	font-size: 80%;
 }
 .err {
 	width: 100%;
 	background-color: #880000;
 	color: #ffffff;
+}
+div.item.hover {
+	border-width: 1px;
+	background-color: #def;
+	border-color: #248;
+	padding: 0px;
+}
+div.item div.star {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 18px;
+	height: 2.2em;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 150%;
+	color: #888;
+	cursor: pointer;
+}
+#starred div.star {
+	color: #fd7;
 }
